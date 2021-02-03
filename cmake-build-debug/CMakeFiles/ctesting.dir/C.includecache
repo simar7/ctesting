@@ -1,0 +1,18 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/simar/repos/ctesting/test_tracee.bpf.c
+assert.h
+-
+stdbool.h
+-
+tracee.bpf.c
+/Users/simar/repos/ctesting/tracee.bpf.c
+
+/Users/simar/repos/ctesting/tracee.bpf.c
+
