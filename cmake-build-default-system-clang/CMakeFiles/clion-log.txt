@@ -1,0 +1,6 @@
+/home/simar/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/203.7148.70/bin/cmake/linux/bin/cmake -DCMAKE_C_COMPILER=/usr/bin/clang -D CMAKE_C_COMPILER=/usr/bin/clang -G "CodeBlocks - Unix Makefiles" /home/simar/repos/ctesting
+-- Kernel release: 5.8.0-38-generic
+-- Kernel headers: /usr/src/linux-headers-5.8.0-38-generic
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/simar/repos/ctesting/cmake-build-default-system-clang

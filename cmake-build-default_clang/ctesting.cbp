@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="ctesting"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;CMake Files\cmake\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/home/simar/repos/ctesting/cmake-build-default_clang"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j4 -f &quot;/home/simar/repos/ctesting/cmake-build-default_clang/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/gmake -j4 -f &quot;/home/simar/repos/ctesting/cmake-build-default_clang/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j4 -f &quot;/home/simar/repos/ctesting/cmake-build-default_clang/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j4 -f &quot;/home/simar/repos/ctesting/cmake-build-default_clang/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/home/simar/repos/ctesting/cmake-build-default_clang"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j4 -f &quot;/home/simar/repos/ctesting/cmake-build-default_clang/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/gmake -j4 -f &quot;/home/simar/repos/ctesting/cmake-build-default_clang/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j4 -f &quot;/home/simar/repos/ctesting/cmake-build-default_clang/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j4 -f &quot;/home/simar/repos/ctesting/cmake-build-default_clang/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/home/simar/repos/ctesting/cmake-build-default_clang"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j4 -f &quot;/home/simar/repos/ctesting/cmake-build-default_clang/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/gmake -j4 -f &quot;/home/simar/repos/ctesting/cmake-build-default_clang/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j4 -f &quot;/home/simar/repos/ctesting/cmake-build-default_clang/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j4 -f &quot;/home/simar/repos/ctesting/cmake-build-default_clang/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="ctesting">
+				<Option output="/home/simar/repos/ctesting/cmake-build-default_clang/ctesting" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/simar/repos/ctesting/cmake-build-default_clang"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-D__KERNEL__"/>
+					<Add option="-DMODULE"/>
+					<Add option="-D__BPF_TRACING__"/>
+					<Add directory="/usr/src/linux-headers-5.8.0-38-generic/include"/>
+					<Add directory="/usr/src/linux-headers-5.8.0-38-generic/arch/x86/include"/>
+					<Add directory="/home/simar/repos/ctesting/."/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/10/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j4 -f &quot;/home/simar/repos/ctesting/cmake-build-default_clang/Makefile&quot;  VERBOSE=1 ctesting"/>
+					<CompileFile command="/usr/bin/gmake -j4 -f &quot;/home/simar/repos/ctesting/cmake-build-default_clang/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j4 -f &quot;/home/simar/repos/ctesting/cmake-build-default_clang/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j4 -f &quot;/home/simar/repos/ctesting/cmake-build-default_clang/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="ctesting/fast">
+				<Option output="/home/simar/repos/ctesting/cmake-build-default_clang/ctesting" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/simar/repos/ctesting/cmake-build-default_clang"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-D__KERNEL__"/>
+					<Add option="-DMODULE"/>
+					<Add option="-D__BPF_TRACING__"/>
+					<Add directory="/usr/src/linux-headers-5.8.0-38-generic/include"/>
+					<Add directory="/usr/src/linux-headers-5.8.0-38-generic/arch/x86/include"/>
+					<Add directory="/home/simar/repos/ctesting/."/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/10/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j4 -f &quot;/home/simar/repos/ctesting/cmake-build-default_clang/Makefile&quot;  VERBOSE=1 ctesting/fast"/>
+					<CompileFile command="/usr/bin/gmake -j4 -f &quot;/home/simar/repos/ctesting/cmake-build-default_clang/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j4 -f &quot;/home/simar/repos/ctesting/cmake-build-default_clang/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j4 -f &quot;/home/simar/repos/ctesting/cmake-build-default_clang/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/home/simar/repos/ctesting/test_tracee.bpf.c">
+			<Option target="ctesting"/>
+		</Unit>
+		<Unit filename="/home/simar/repos/ctesting/tracee.bpf.c">
+			<Option target="ctesting"/>
+		</Unit>
+		<Unit filename="/home/simar/repos/ctesting/tracee.bpf.h">
+			<Option target="ctesting"/>
+		</Unit>
+		<Unit filename="/home/simar/repos/ctesting/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="/home/simar/repos/ctesting/cmake/FindKernelHeaders.cmake">
+			<Option virtualFolder="CMake Files\cmake\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

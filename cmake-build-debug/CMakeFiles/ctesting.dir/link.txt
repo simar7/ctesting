@@ -1,1 +1,1 @@
-/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc -g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15 -Wl,-search_paths_first -Wl,-headerpad_max_install_names  CMakeFiles/ctesting.dir/tracee.bpf.c.o CMakeFiles/ctesting.dir/test_tracee.bpf.c.o  -o ctesting 
+/usr/bin/cc -g   CMakeFiles/ctesting.dir/tracee.bpf.c.o CMakeFiles/ctesting.dir/test_tracee.bpf.c.o  -o ctesting 

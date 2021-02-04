@@ -1,0 +1,43 @@
+#!/bin/sh
+
+clang -S \
+        -D__BPF_TRACING__ \
+        -D__KERNEL__ \
+        -D__TARGET_ARCH_x86 \
+	-I"/usr/include" \
+	-I"/usr/include/asm-generic" \
+	-I"/usr/include/x86_64-linux-gnu" \
+        -I"/usr/src/linux-headers-5.8.0-38-generic/include" \
+        -I"/usr/src/linux-headers-5.8.0-38-generic/include/asm-generic" \
+        -I"/usr/src/linux-headers-5.8.0-38-generic/include/linux" \
+        -I"/usr/src/linux-headers-5.8.0-38-generic/arch/x86/include/asm" \
+        -I"/usr/src/linux-headers-5.8.0-38-generic/include/generated" \
+        -I dist/libbpf/usr/include/bpf \
+        -include /lib/modules/5.8.0-38-generic/build/include/linux/kconfig.h \
+        -I /lib/modules/5.8.0-38-generic/build/arch/x86/include \
+        -I /lib/modules/5.8.0-38-generic/build/arch/x86/include/uapi \
+        -I /lib/modules/5.8.0-38-generic/build/arch/x86/include/generated \
+        -I /lib/modules/5.8.0-38-generic/build/arch/x86/include/generated/uapi \
+        -I /lib/modules/5.8.0-38-generic/build/include \
+        -I /lib/modules/5.8.0-38-generic/build/include \
+        -I /lib/modules/5.8.0-38-generic/build/include/uapi \
+        -I /lib/modules/5.8.0-38-generic/build/include/generated \
+        -I /lib/modules/5.8.0-38-generic/build/include/generated/uapi \
+        -I 3rdparty/include \
+        -Wno-address-of-packed-member \
+        -Wno-compare-distinct-pointer-types \
+        -Wno-deprecated-declarations \
+        -Wno-gnu-variable-sized-type-not-at-end \
+        -Wno-pointer-sign \
+        -Wno-pragma-once-outside-heade \
+        -Wno-unknown-warning-option \
+        -Wno-unused-value \
+        -Wunused \
+        -Wall \
+        -fno-stack-protector \
+        -fno-jump-tables \
+        -fno-unwind-tables \
+        -fno-asynchronous-unwind-tables \
+        -xc \
+        -nostdinc \
+        -O2 -emit-llvm -c -g test_tracee.bpf.c -o test.out 

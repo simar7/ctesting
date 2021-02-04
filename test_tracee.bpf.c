@@ -2,9 +2,10 @@
 // Created by Simarpreet Singh on 2021-02-02.
 //
 
-#include <assert.h>
-#include <stdbool.h>
+//#include <assert.h>
+//#include <stdbool.h>
 //#include "tracee.bpf.h"
+#include <linux/types.h>
 #include "tracee.bpf.c" // hack to call static __inline methods
 
 void test_has_prefix(){

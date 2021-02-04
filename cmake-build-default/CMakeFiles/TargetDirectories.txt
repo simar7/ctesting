@@ -1,0 +1,3 @@
+/home/simar/repos/ctesting/cmake-build-default/CMakeFiles/rebuild_cache.dir
+/home/simar/repos/ctesting/cmake-build-default/CMakeFiles/edit_cache.dir
+/home/simar/repos/ctesting/cmake-build-default/CMakeFiles/ctesting.dir
